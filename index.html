@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장흥 지역사랑 휴가지원 4박 5일 여행 가이드 (2026.11.12 ~ 11.16)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; }
+        .tab-btn.active { border-bottom: 3px solid #059669; color: #059669; font-weight: 700; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 pb-20">
+
+    <!-- 상단 헤더 -->
+    <header class="bg-emerald-700 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
+            <div>
+                <span class="text-xs bg-emerald-800 text-emerald-200 px-2 py-0.5 rounded-full font-medium">60대 부부 맞춤 힐링</span>
+                <h1 class="text-lg font-bold tracking-tight">장흥 4박 5일 여행가이드</h1>
+                <p class="text-xs text-emerald-100">2026.11.12(목) ~ 11.16(월) | 지역사랑 휴가지원</p>
+            </div>
+            <div class="text-right">
+                <span class="text-xs bg-yellow-400 text-slate-900 font-bold px-2 py-1 rounded-lg">Chak 연동</span>
+            </div>
+        </div>
+        <!-- 탭 네비게이션 -->
+        <nav class="flex justify-around bg-white text-slate-600 border-b text-sm font-medium">
+            <button onclick="switchTab('itinerary')" id="tab-itinerary" class="tab-btn active py-3 flex-1 text-center">
+                <i class="fa-solid fa-map-location-dot mr-1"></i>여행계획
+            </button>
+            <button onclick="switchTab('checklist')" id="tab-checklist" class="tab-btn py-3 flex-1 text-center">
+                <i class="fa-solid fa-list-check mr-1"></i>체크리스트
+            </button>
+            <button onclick="switchTab('budget')" id="tab-budget" class="tab-btn py-3 flex-1 text-center">
+                <i class="fa-solid fa-wallet mr-1"></i>예산&정산
+            </button>
+        </nav>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="max-w-md mx-auto p-4 space-y-6">
+
+        <!-- 외부 앱 바로가기 링크 (퀵 런처) -->
+        <section class="bg-white p-3.5 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">필수 앱 & 바로가기</h2>
+            <div class="grid grid-cols-4 gap-2 text-center text-xs">
+                <a href="https://korean.visitkorea.or.kr" target="_blank" class="p-2 bg-pink-50 text-pink-600 rounded-xl font-medium hover:bg-pink-100 transition"><i class="fa-solid fa-map-location text-base mb-1 block"></i>대한민국구석구석</a>
+                <a href="https://www.youtube.com" target="_blank" class="p-2 bg-red-50 text-red-600 rounded-xl font-medium hover:bg-red-100 transition"><i class="fa-brands fa-youtube text-base mb-1 block"></i>YouTube</a>
+                <a href="https://tmoneygo.com" target="_blank" class="p-2 bg-blue-50 text-blue-600 rounded-xl font-medium hover:bg-blue-100 transition"><i class="fa-solid fa-bus text-base mb-1 block"></i>티머니GO</a>
+                <a href="https://www.bustago.or.kr" target="_blank" class="p-2 bg-indigo-50 text-indigo-600 rounded-xl font-medium hover:bg-indigo-100 transition"><i class="fa-solid fa-ticket text-base mb-1 block"></i>버스타고</a>
+                <a href="https://www.jangheungmall.com" target="_blank" class="p-2 bg-emerald-50 text-emerald-700 rounded-xl font-medium hover:bg-emerald-100 transition"><i class="fa-solid fa-store text-base mb-1 block"></i>장흥몰</a>
+                <a href="https://www.komsco.com" target="_blank" class="p-2 bg-amber-50 text-amber-700 rounded-xl font-medium hover:bg-amber-100 transition"><i class="fa-solid fa-coins text-base mb-1 block"></i>지역사랑 Chak</a>
+                <a href="https://www.booking.com" target="_blank" class="p-2 bg-sky-50 text-sky-700 rounded-xl font-medium hover:bg-sky-100 transition"><i class="fa-solid fa-hotel text-base mb-1 block"></i>부킹닷컴</a>
+            </div>
+        </section>
+
+        <!-- PAGE 1: 여행계획 -->
+        <div id="page-itinerary" class="space-y-6">
+
+            <!-- 필수 전화번호 & 정보 안내 -->
+            <section class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-xs space-y-2">
+                <div class="flex items-center justify-between text-amber-800 font-bold text-sm">
+                    <span><i class="fa-solid fa-phone mr-1.5"></i>장흥지역 택시 호출 번호</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-1 text-slate-700">
+                    <a href="tel:061-863-2300" class="bg-white p-2 rounded-lg text-center shadow-xs border border-amber-200 font-semibold text-emerald-700">장흥읍 콜택시<br><span class="text-slate-500 font-normal">061-863-2300</span></a>
+                    <a href="tel:061-867-2233" class="bg-white p-2 rounded-lg text-center shadow-xs border border-amber-200 font-semibold text-emerald-700">관산읍 콜택시<br><span class="text-slate-500 font-normal">061-867-2233</span></a>
+                    <a href="tel:061-867-5500" class="bg-white p-2 rounded-lg text-center shadow-xs border border-amber-200 font-semibold text-emerald-700">회진면 콜택시<br><span class="text-slate-500 font-normal">061-867-5500</span></a>
+                    <a href="tel:061-862-8255" class="bg-white p-2 rounded-lg text-center shadow-xs border border-amber-200 font-semibold text-emerald-700">안양/수문 콜택시<br><span class="text-slate-500 font-normal">061-862-8255</span></a>
+                </div>
+            </section>
+
+            <!-- 일자별 일정 리스트 -->
+            <div class="space-y-4">
+
+                <!-- 1일차 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-3">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">1일차 | 11/12(목)</span>
+                        <span class="text-xs text-slate-500">삼송역 ➔ 센트럴시티 ➔ 장흥</span>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">07:00 집 출발 ➔ 08:40 서울센트럴시티 출발</div>
+                            <p class="text-slate-500 mt-0.5">3호선 삼송역 출발 ➔ 고속터미널역 이동 (약 40분)</p>
+                            <div class="mt-2 text-emerald-800 bg-emerald-50 p-2 rounded-lg">
+                                <strong>🍳 [추천 아침 식사] 센트럴시티 인근 (연속 영업 / 平점 4.0 이상)</strong>
+                                <ul class="list-disc pl-4 mt-1 space-y-0.5 text-slate-700">
+                                    <li><strong>삼백집 센트럴시티점</strong> (07:00~, 평점 4.2) - 콩나물국밥 9,000원</li>
+                                    <li><strong>고향의맛</strong> (24시간, 평점 4.0) - 한식 장터국밥 9,500원</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">13:00 장흥시외버스터미널 도착 ➔ 점심 식사</div>
+                            <div class="mt-1 text-emerald-800 bg-emerald-50 p-2 rounded-lg">
+                                <strong>🍚 [추천 점심 식사] 장흥터미널 인근 (노브레이크 / 平점 4.0 이상)</strong>
+                                <ul class="list-disc pl-4 mt-1 space-y-0.5 text-slate-700">
+                                    <li><strong>수복식당</strong> (10:00~, 평점 4.1) - 장흥한정식/굴비정식 18,000~25,000원</li>
+                                    <li><strong>끄니걱정</strong> (10:00~, 평점 4.0) - 장흥 삼합/바지락회무침 15,000원</li>
+                                    <li><strong>한라네 소머리국밥</strong> (10:00~, 평점 4.5) - 소머리국밥 10,000원</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">14:30 [인증 1] 정남진 편백숲 우드랜드 산책</div>
+                            <p class="text-slate-500 mt-0.5">장흥터미널 ➔ 우드랜드 택시 약 7분 (약 5,000원)</p>
+                            <p class="text-emerald-700 font-semibold mt-1">📸 [필수] 입장료 결제(Chak) & 입구 표지석 앞 부부 인증샷 촬영!</p>
+                            <div class="mt-1.5 text-amber-800 bg-amber-50 p-2 rounded-lg">
+                                <strong>☕ [추천 카페]</strong> 억불산 우드랜드 숲카페 (평점 4.3, 자생차/커피 5,000원)
+                            </div>
+                        </div>
+
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">18:00 숙소 체크인 및 저녁 식사</div>
+                            <p class="text-slate-500">장흥읍 숙소 이동 후 장흥 한우 삼합으로 저녁 식사</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2일차 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-3">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">2일차 | 11/13(금)</span>
+                        <span class="text-xs text-slate-500">천관산 산행 & 관산/회진 탐방</span>
+                    </div>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">08:00 장흥읍 ➔ 관산버스터미널 ➔ 천관산</div>
+                            <p class="text-slate-500">장흥터미널에서 관산행 군내버스 탑승 (약 25분) ➔ 관산에서 택시로 장천재 이동</p>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">09:00~14:00 [인증 2] 천관산 연대봉 등산</div>
+                            <p class="text-slate-500">장천재 ➔ 체육공원 ➔ 환희대 ➔ 연대봉(정상) ➔ 원점회귀</p>
+                            <p class="text-emerald-700 font-semibold mt-1">📸 [필수] 천관산 연대봉 정상석 부부 인증샷 촬영!</p>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">14:30 늦은 점심 (관산읍/회진면)</div>
+                            <div class="mt-1 text-emerald-800 bg-emerald-50 p-2 rounded-lg">
+                                <strong>🍚 [추천 점심/간식] (평점 4.0 이상)</strong>
+                                <ul class="list-disc pl-4 mt-1 space-y-0.5 text-slate-700">
+                                    <li><strong>회진 남도회관</strong> (평점 4.2) - 제철 매생이국/바지락비빔밥 12,000원</li>
+                                    <li><strong>관산 은하식당</strong> (평점 4.1) - 백반한정식 10,000원</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3일차 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-3">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">3일차 | 11/14(토)</span>
+                        <span class="text-xs text-slate-500">제암산 휴양림 & 수문해수욕장</span>
+                    </div>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">09:00~13:00 제암산 자연휴양림 숲길 트레킹</div>
+                            <p class="text-slate-500">장흥읍에서 택시 이동 (약 15분, 12,000원)</p>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">14:00 수문해수욕장 & 정남진 126타워</div>
+                            <div class="mt-1 text-emerald-800 bg-emerald-50 p-2 rounded-lg">
+                                <strong>🍱 [한정식 특선 추천] 장흥 대표 한정식</strong>
+                                <ul class="list-disc pl-4 mt-1 space-y-0.5 text-slate-700">
+                                    <li><strong>신가네 한정식</strong> (평점 4.4, 브레이크타임 없음) - 장흥계절한정식 25,000~35,000원</li>
+                                    <li><strong>취락식당</strong> (평점 4.1, 브레이크타임 없음) - 남도 한정식 20,000원</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4일차 및 5일차 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-3">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">4일차~5일차 | 11/15(일)~16(월)</span>
+                        <span class="text-xs text-slate-500">장흥 장보기 ➔ 삼송 복귀</span>
+                    </div>
+                    <div class="space-y-2 text-xs">
+                        <div class="p-2.5 bg-slate-50 rounded-xl">
+                            <div class="font-bold text-slate-700">11/15(일) 장흥 토요시장 특산품 쇼핑</div>
+                            <p class="text-slate-500">표고버섯, 무산김, 한우 구매 (Chak 모바일 상품권 결제)</p>
+                        </div>
+                        <div class="p-2.5 bg-amber-50 text-amber-900 rounded-xl">
+                            <div class="font-bold">11/16(월) 장흥 출발 ➔ 서울 센트럴시티 귀가</div>
+                            <p class="mt-1"><strong>16:00 장흥시외버스터미널 출발</strong> (고속버스) ➔ 20:20 서울 센트럴시티 도착 ➔ 3호선 삼송역 귀가</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 군내 버스 시간표 섹션 -->
+            <section class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 flex items-center">
+                    <i class="fa-solid fa-bus text-emerald-600 mr-2"></i>장흥 ↔ 관산 군내버스 주요 시간표
+                </h3>
+                <div class="text-xs space-y-2 text-slate-600">
+                    <div class="p-2.5 bg-slate-50 rounded-xl">
+                        <span class="font-bold text-emerald-700">장흥터미널 ➔ 관산 방면:</span>
+                        <p class="mt-0.5">06:40, 07:30, 08:20, 09:10, 10:00, 11:10, 12:30, 13:50, 15:10, 16:40, 18:00</p>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl">
+                        <span class="font-bold text-emerald-700">관산터미널 ➔ 장흥 방면:</span>
+                        <p class="mt-0.5">07:20, 08:10, 09:00, 10:00, 11:20, 12:40, 14:00, 15:30, 17:00, 18:30</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 추천 숙소 섹션 -->
+            <section class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 flex items-center">
+                    <i class="fa-solid fa-bed text-emerald-600 mr-2"></i>장흥 추천 숙소 (부부 맞춤 / 영수증 증빙 가능)
+                </h3>
+                <div class="text-xs space-y-2">
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800 text-sm">정남진 편백숲 우드랜드 한옥/무장애실</strong>
+                            <p class="text-slate-500">장흥읍 우드랜드 내 | 자연속 힐링</p>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded font-bold">7~12만원</span>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800 text-sm">장흥 스파 리조트 / 호텔 안단테</strong>
+                            <p class="text-slate-500">수문해수욕장 인근 | 오션뷰 & 해수스파</p>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded font-bold">8~13만원</span>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800 text-sm">장흥읍 세종호텔 / 관광호텔</strong>
+                            <p class="text-slate-500">장흥터미널 도보 5분 | 대중교통 최적 위치</p>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded font-bold">6~9만원</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 주요 거점 편의시설 & 화장실 구글맵 통합 섹션 -->
+            <section class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-sm font-bold text-slate-800 flex items-center">
+                        <i class="fa-solid fa-map-location text-emerald-600 mr-2"></i>동선 주변 편의점 & 화장실
+                    </h3>
+                    <button onclick="toggleToiletForm()" class="text-xs bg-emerald-600 text-white px-2.5 py-1 rounded-lg font-medium">+ 화장실 추가</button>
+                </div>
+
+                <!-- 신규 화장실 추가 폼 -->
+                <div id="toilet-form" class="hidden bg-slate-50 p-3 rounded-xl space-y-2 border border-slate-200 text-xs">
+                    <input type="text" id="toilet-name" placeholder="화장실/장소 이름 (예: 천관산 주차장 화장실)" class="w-full p-2 border border-slate-300 rounded-lg">
+                    <input type="text" id="toilet-desc" placeholder="위치 설명 또는 특징" class="w-full p-2 border border-slate-300 rounded-lg">
+                    <button onclick="addCustomToilet()" class="w-full bg-emerald-700 text-white py-1.5 rounded-lg font-bold">추가 저장하기</button>
+                </div>
+
+                <!-- 구글 맵 리스트 -->
+                <div id="toilet-list" class="space-y-2 text-xs">
+                    <!-- 기본 거점 편의점 및 화장실 정보 -->
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800"><i class="fa-solid fa-toilet text-blue-500 mr-1"></i>장흥시외버스터미널 공공화장실</strong>
+                            <p class="text-slate-500">터미널 대합실 내부 위치 (24시간)</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=장흥시외버스터미널화장실" target="_blank" class="bg-slate-200 text-slate-700 px-2 py-1 rounded">구글맵</a>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800"><i class="fa-solid fa-store text-emerald-600 mr-1"></i>CU 장흥터미널점 / GS25 장흥토요시장점</strong>
+                            <p class="text-slate-500">터미널 바로 앞 및 시장 입구</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=장흥터미널편의점" target="_blank" class="bg-slate-200 text-slate-700 px-2 py-1 rounded">구글맵</a>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800"><i class="fa-solid fa-toilet text-blue-500 mr-1"></i>천관산 도립공원 입구 화장실</strong>
+                            <p class="text-slate-500">장천재 매표소 및 주차장 부근</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=천관산도립공원주차장화장실" target="_blank" class="bg-slate-200 text-slate-700 px-2 py-1 rounded">구글맵</a>
+                    </div>
+                    <div class="p-2.5 bg-slate-50 rounded-xl flex justify-between items-center">
+                        <div>
+                            <strong class="text-slate-800"><i class="fa-solid fa-store text-emerald-600 mr-1"></i>이마트24 장흥관산점 / CU 관산점</strong>
+                            <p class="text-slate-500">관산시외버스터미널 인근</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=관산버스터미널편의점" target="_blank" class="bg-slate-200 text-slate-700 px-2 py-1 rounded">구글맵</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 여행 메모장 (로컬 저장 기능) -->
+            <section class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 flex items-center">
+                    <i class="fa-solid fa-pen-to-square text-emerald-600 mr-2"></i>여행 메모장 & 기록
+                </h3>
+                <textarea id="travel-memo" rows="4" class="w-full p-3 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-emerald-500 focus:outline-none" placeholder="여행 중 기억하고 싶은 내용이나 맛집 느낀 점을 자유롭게 기록하세요..."></textarea>
+                <div class="flex justify-between items-center">
+                    <span id="memo-saved-status" class="text-xs text-emerald-600 font-medium"></span>
+                    <button onclick="saveMemo()" class="bg-emerald-700 text-white px-4 py-1.5 rounded-lg text-xs font-bold shadow-sm">메모 저장</button>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- PAGE 2: 체크리스트 -->
+        <div id="page-checklist" class="hidden space-y-4">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <h3 class="text-sm font-bold text-slate-800">지역사랑 휴가지원 필수 체크리스트</h3>
+                    <span class="text-xs text-emerald-600 font-bold" id="checklist-progress">0% 완료</span>
+                </div>
+                <div id="checklist-items" class="space-y-2 text-xs">
+                    <!-- JavaScript로 동적 생성 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 3: 예산 & 정산 (영수증 및 사진 추가 기능) -->
+        <div id="page-budget" class="hidden space-y-4">
+            <!-- 예산 요약 -->
+            <div class="bg-emerald-800 text-white p-4 rounded-2xl shadow-md space-y-2">
+                <span class="text-xs text-emerald-200">지역사랑 휴가지원 반값 혜택 예상</span>
+                <div class="flex justify-between items-baseline">
+                    <h3 class="text-xl font-bold">총 지출 금액</h3>
+                    <span class="text-lg font-bold text-yellow-300" id="total-spent">0 원</span>
+                </div>
+                <p class="text-xs text-emerald-100 border-t border-emerald-700 pt-2 mt-1">
+                    💡 50% 환급 예정 금액: <strong class="text-yellow-300" id="refund-expected">0 원</strong> (Chak 모바일 상품권 지급)
+                </p>
+            </div>
+
+            <!-- 지출 및 영수증 등록 -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-sm font-bold text-slate-800">지출 내역 & 영수증/사진 저장</h3>
+                <div class="space-y-2 text-xs">
+                    <input type="text" id="expense-title" placeholder="내용 (예: 수복식당 점심)" class="w-full p-2 border border-slate-200 rounded-lg">
+                    <div class="flex gap-2">
+                        <input type="number" id="expense-amount" placeholder="금액 (원)" class="w-1/2 p-2 border border-slate-200 rounded-lg">
+                        <select id="expense-category" class="w-1/2 p-2 border border-slate-200 rounded-lg">
+                            <option value="식비">식비/카페</option>
+                            <option value="숙박">숙박비</option>
+                            <option value="교통">교통비(택시/버스)</option>
+                            <option value="쇼핑">특산품/쇼핑</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-500 mb-1">영수증/인증 사진 첨부:</label>
+                        <input type="file" id="expense-photo" accept="image/*" class="w-full text-slate-500 file:mr-2 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:bg-emerald-50 file:text-emerald-700">
+                    </div>
+                    <button onclick="addExpense()" class="w-full bg-emerald-700 text-white py-2 rounded-xl font-bold mt-1">지출 및 영수증 추가</button>
+                </div>
+            </div>
+
+            <!-- 지출 내역 리스트 -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-sm font-bold text-slate-800">저장된 정산 내역</h3>
+                <div id="expense-list" class="space-y-2 text-xs">
+                    <p class="text-slate-400 text-center py-4">등록된 지출 내역이 없습니다.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS 스크립트 -->
+    <script>
+        // 탭 전환 기능
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('tab-' + tabName).classList.add('active');
+            
+            document.getElementById('page-itinerary').classList.add('hidden');
+            document.getElementById('page-checklist').classList.add('hidden');
+            document.getElementById('page-budget').classList.add('hidden');
+
+            document.getElementById('page-' + tabName).classList.remove('hidden');
+        }
+
+        // 메모장 저장 기능
+        const memoTextarea = document.getElementById('travel-memo');
+        const memoStatus = document.getElementById('memo-saved-status');
+        
+        // 메모 불러오기
+        if(localStorage.getItem('jangheung_memo')) {
+            memoTextarea.value = localStorage.getItem('jangheung_memo');
+        }
+
+        function saveMemo() {
+            localStorage.setItem('jangheung_memo', memoTextarea.value);
+            memoStatus.innerText = "저장되었습니다!";
+            setTimeout(() => memoStatus.innerText = "", 2000);
+        }
+
+        // 화장실 추가 폼 토글
+        function toggleToiletForm() {
+            const form = document.getElementById('toilet-form');
+            form.classList.toggle('hidden');
+        }
+
+        // 사용자 정의 화장실 추가
+        function addCustomToilet() {
+            const name = document.getElementById('toilet-name').value;
+            const desc = document.getElementById('toilet-desc').value;
+            if(!name) return alert('화장실 이름을 입력하세요.');
+
+            const list = document.getElementById('toilet-list');
+            const newItem = document.createElement('div');
+            newItem.className = "p-2.5 bg-slate-50 rounded-xl flex justify-between items-center";
+            newItem.innerHTML = `
+                <div>
+                    <strong class="text-slate-800"><i class="fa-solid fa-toilet text-blue-500 mr-1"></i>${name}</strong>
+                    <p class="text-slate-500">${desc || '사용자 추가 화장실'}</p>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}" target="_blank" class="bg-slate-200 text-slate-700 px-2 py-1 rounded text-xs">구글맵</a>
+            `;
+            list.prepend(newItem);
+
+            document.getElementById('toilet-name').value = '';
+            document.getElementById('toilet-desc').value = '';
+            toggleToiletForm();
+        }
+
+        // 체크리스트 데이터 및 로직
+        const defaultChecklist = [
+            "여행 2~3일 전 '장흥 반값 플러스' 사전 신청 완료",
+            "지역사랑상품권 'Chak' 앱 설치 및 계좌 연동",
+            "센트럴시티 ↔ 장흥 고속버스 왕복 티켓 예매",
+            "[인증 1] 정남진 편백숲 우드랜드 표지석 부부 인증샷",
+            "[인증 2] 천관산 연대봉 정상석 부부 인증샷",
+            "장흥 관내 가맹점 결제 시 Chak 모바일 영수증 확보",
+            "숙소 '숙박이용확인증' 발급 요청 및 챙기기",
+            "여행 후 7일 이내 장흥 반값 플러스 정산 서류 제출"
+        ];
+
+        function renderChecklist() {
+            const container = document.getElementById('checklist-items');
+            container.innerHTML = '';
+            let checkedCount = 0;
+
+            const savedState = JSON.parse(localStorage.getItem('jangheung_checklist') || '{}');
+
+            defaultChecklist.forEach((item, index) => {
+                const isChecked = savedState[index] || false;
+                if(isChecked) checkedCount++;
+
+                const div = document.createElement('div');
+                div.className = "flex items-center space-x-2 p-2 bg-slate-50 rounded-lg";
+                div.innerHTML = `
+                    <input type="checkbox" id="chk-${index}" ${isChecked ? 'checked' : ''} onchange="toggleCheck(${index})" class="w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500">
+                    <label for="chk-${index}" class="text-slate-700 ${isChecked ? 'line-through text-slate-400' : ''}">${item}</label>
+                `;
+                container.appendChild(div);
+            });
+
+            const percent = Math.round((checkedCount / defaultChecklist.length) * 100);
+            document.getElementById('checklist-progress').innerText = `${percent}% 완료`;
+        }
+
+        function toggleCheck(index) {
+            const savedState = JSON.parse(localStorage.getItem('jangheung_checklist') || '{}');
+            savedState[index] = !savedState[index];
+            localStorage.setItem('jangheung_checklist', JSON.stringify(savedState));
+            renderChecklist();
+        }
+
+        // 예산 및 영수증 관리 로직
+        let expenses = JSON.parse(localStorage.getItem('jangheung_expenses') || '[]');
+
+        function addExpense() {
+            const title = document.getElementById('expense-title').value;
+            const amount = parseInt(document.getElementById('expense-amount').value);
+            const category = document.getElementById('expense-category').value;
+            const photoInput = document.getElementById('expense-photo');
+
+            if(!title || isNaN(amount)) return alert('내용과 금액을 정확히 입력하세요.');
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const photoData = e.target ? e.target.result : null;
+                const newExpense = {
+                    id: Date.now(),
+                    title,
+                    amount,
+                    category,
+                    photo: photoData
+                };
+                expenses.push(newExpense);
+                localStorage.setItem('jangheung_expenses', JSON.stringify(expenses));
+                
+                document.getElementById('expense-title').value = '';
+                document.getElementById('expense-amount').value = '';
+                document.getElementById('expense-photo').value = '';
+
+                renderExpenses();
+            };
+
+            if(photoInput.files && photoInput.files[0]) {
+                reader.readAsDataURL(photoInput.files[0]);
+            } else {
+                reader.onload({ target: { result: null } });
+            }
+        }
+
+        function renderExpenses() {
+            const list = document.getElementById('expense-list');
+            list.innerHTML = '';
+
+            let total = 0;
+
+            if(expenses.length === 0) {
+                list.innerHTML = '<p class="text-slate-400 text-center py-4">등록된 지출 내역이 없습니다.</p>';
+            } else {
+                expenses.forEach(exp => {
+                    total += exp.amount;
+                    const div = document.createElement('div');
+                    div.className = "p-3 bg-slate-50 rounded-xl space-y-2 border border-slate-100";
+                    div.innerHTML = `
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">${exp.category}</span>
+                                <strong class="text-slate-800 text-sm ml-1">${exp.title}</strong>
+                            </div>
+                            <span class="font-bold text-slate-800 text-sm">${exp.amount.toLocaleString()} 원</span>
+                        </div>
+                        ${exp.photo ? `<div class="mt-1"><img src="${exp.photo}" class="w-full h-32 object-cover rounded-lg border border-slate-200"></div>` : ''}
+                    `;
+                    list.appendChild(div);
+                });
+            }
+
+            document.getElementById('total-spent').innerText = `${total.toLocaleString()} 원`;
+            document.getElementById('refund-expected').innerText = `${Math.round(total * 0.5).toLocaleString()} 원`;
+        }
+
+        // 초기화
+        window.onload = function() {
+            renderChecklist();
+            renderExpenses();
+        };
+    </script>
+</body>
+</html>
